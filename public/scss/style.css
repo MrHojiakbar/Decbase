@@ -9,13 +9,12 @@ body {
 }
 
 .container {
-  width: 1932px;
-  width: 100%;
+  max-width: 1932px;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 270px;
 }
 
-footer .footer-bottom, .about, .header main {
+footer .footer-bottom, .about, .what-do .box-wrapper, .header main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +131,6 @@ footer .footer-bottom, .about, .header main {
   margin-bottom: 50px;
 }
 .what-do .box-wrapper {
-  display: flex;
   gap: 37px;
   width: 100%;
 }
@@ -225,6 +223,12 @@ footer .footer-bottom, .about, .header main {
   line-height: 18px;
   letter-spacing: 0%;
   color: #FFFFFF;
+}
+.about .right-about .mega-title {
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 28px;
+  letter-spacing: -1%;
 }
 .about img {
   width: 717;

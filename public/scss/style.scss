@@ -9,10 +9,9 @@ body {
 }
 
 .container {
-    width: 1932px;
-    width: 100%;
+    max-width: 1932px;
+    width: 90%;
     margin: 0 auto;
-    padding: 0 270px;
 }
 
 %center {
@@ -147,7 +146,7 @@ body {
     }
 
     .box-wrapper {
-        display: flex;
+        @extend %center;
         gap: 37px;
         width: 100%;
 
@@ -254,6 +253,13 @@ body {
             letter-spacing: 0%;
             color: #FFFFFF;
         }
+
+        .mega-title {
+            font-weight: 700;
+            font-size: 288px;
+            line-height: 28px;
+            letter-spacing: -1%;
+        }
     }
 
     & img {
@@ -264,6 +270,7 @@ body {
     }
 
     margin-bottom: 224px;
+
 }
 
 footer {
@@ -292,9 +299,11 @@ footer {
         margin-bottom: 69px;
 
     }
-    hr{
+
+    hr {
         color: #C4C4C4;
     }
+
     .footer-bottom {
         @extend %center;
         padding: 15px;
